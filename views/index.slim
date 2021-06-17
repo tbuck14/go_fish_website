@@ -1,0 +1,22 @@
+.flex.items-center
+        img.logo src="/images/noun_fishing.png" alt="The game of go fish" 
+        h1
+          span.light-primary-text Go
+          span Fish
+.card.container--xs.page-content
+  form.container--xs action='/lobby' method='POST'
+    h1.text-center Login
+    
+    .form__group
+      label.form__label Email
+      input.form__input type='text' placeholder='example@example.com' name='email'
+    .form__group
+      label.form__label Password
+      input.form__input type='text' placeholder='Your password...' name='password'
+
+    .form__group.flex.justify-center
+      button.btn.btn--primary.half-width.btn--rounded type='submit' Login 
+
+  container--xs.flex.justify-center 
+    a.btn.btn--outline.btn--small.btn--rounded  href="/create-account" I don't have an account     
+  

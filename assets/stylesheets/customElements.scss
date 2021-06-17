@@ -1,0 +1,50 @@
+.light-primary-text {
+  color: var(--color-primary-light);
+}
+.dark-primary-text {
+  color: var(--color-primary-darker);
+}
+.light-secondary-text {
+  color: var(--color-secondary-light)
+}
+.nav-card {
+  position:relative;
+  top: 5em;
+  height: 20em;
+  width: 15em;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.avatar {
+  height: 10vh;
+  border: 3px solid black;
+  border-radius: 100em;
+  margin: 0 1.2em .5em .5em ;
+}
+
+.outline {
+  flex:1;
+  border: 1px solid transparent;
+  height: 70vh;
+  min-width: 20em;
+}
+
+.small-outline {
+  border: 1px solid transparent;
+  min-height:50%;
+  padding: 1em;
+}
+
+.playing-card {
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  height: 4.5em;
+  width:4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
