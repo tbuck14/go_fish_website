@@ -26,9 +26,16 @@
   margin: 0 1.2em .5em .5em ;
 }
 
+.small-avatar {
+  margin-right: 1em;
+  height: 6vh;
+  border: 2px solid black;
+  border-radius: 100em;
+}
+
 .outline {
   flex:1;
-  border: 1px solid transparent;
+  border: 1px solid black;
   height: 70vh;
   min-width: 20em;
 }
@@ -47,4 +54,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.radio {
+  opacity: 0;
+  position: absolute;
+  &:checked + .radio__label {
+    border: 3px solid white;
+    background-color: var(--color-primary);
+  }
+}
+
+.radio__label {
+  margin: 0 auto;
+  border: 3px solid black;
+  border-radius: var(--radius-lg);
+  min-width: 20vw;
+  max-width: 50vw;
+  height: 10vh;
+  padding: 1em;
+  display: flex;
+  align-items: center;
 }
