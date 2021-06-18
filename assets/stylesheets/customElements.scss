@@ -1,7 +1,7 @@
 .light-primary-text {
   color: var(--color-primary-light);
 }
-.primary{
+.color-primary{
   color: var(--color-primary);
 }
 .notice {
@@ -46,7 +46,7 @@
   border: 4px solid transparent;
   border-radius: var(--radius-sm);
   height: 4.5rem;
-  width:3rem;
+  width:3.6rem;
   margin: .15rem .25rem;
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@
 
 .playing-card--lg {
   height: 6rem;
-  width: 4rem;
+  width: 4.6rem;
 }
 .radio {
   opacity: 0;
