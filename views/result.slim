@@ -1,0 +1,19 @@
+.flex.justify-between
+  .flex.items-center
+    img.logo src="/images/noun_fishing.png" alt="The game of go fish" 
+    h1
+      span.primary Go
+      span Fish
+  .flex.justify-center.items-center
+    .flex-col 
+      h3 Tbuck14
+      h5.text-center logged in   
+    img.avatar.margin-right-lg src="/images/trump.png" alt="The game of go fish"
+.card.container--xs.page-content.text-center
+  h1 Go Fish!
+  form.center.margin-top-xl action='/game' method='POST'
+    .container--xs
+      input.radio__playing-card type="radio" name="card" id="card1" 
+      label for="card1"
+        img.playing-card.playing-card--lg src="/images/standard_2.png" alt="card"
+    button.btn.btn--primary.half-width.btn--rounded.margin-top-lg type='submit' OK 

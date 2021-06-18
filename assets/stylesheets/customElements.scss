@@ -1,9 +1,14 @@
 .light-primary-text {
   color: var(--color-primary-light);
 }
+.primary{
+  color: var(--color-primary)
+}
+
 .dark-primary-text {
   color: var(--color-primary-darker);
 }
+
 .light-secondary-text {
   color: var(--color-secondary-light)
 }
@@ -19,23 +24,9 @@
   justify-content: space-evenly;
 }
 
-.avatar {
-  height: 10vh;
-  border: 3px solid black;
-  border-radius: 100em;
-  margin: 0 1.2em .5em .5em ;
-}
-
-.small-avatar {
-  margin-right: 1em;
-  height: 6vh;
-  border: 2px solid black;
-  border-radius: 100em;
-}
-
 .outline {
   flex:1;
-  border: 1px solid black;
+  border: 1px solid transparent;
   height: 70vh;
   min-width: 20em;
 }
@@ -47,20 +38,25 @@
 }
 
 .playing-card {
-  border: 1px solid transparent;
+  border: 4px solid transparent;
   border-radius: var(--radius-sm);
-  height: 4.5em;
-  width:4em;
+  height: 4.5rem;
+  width:3rem;
+  margin: .15rem .25rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.playing-card--lg {
+  height: 6rem;
+  width: 4rem;
+}
 .radio {
   opacity: 0;
   position: absolute;
   &:checked + .radio__label {
-    border: 3px solid white;
+    border: 3px solid var(--color-white);
     background-color: var(--color-primary);
   }
 }
@@ -75,4 +71,12 @@
   padding: 1em;
   display: flex;
   align-items: center;
+}
+
+.radio__playing-card {
+  opacity: 0;
+  position: absolute;
+  &:checked + label > img.playing-card {
+    border: 4px solid var(--color-primary);
+  }
 }

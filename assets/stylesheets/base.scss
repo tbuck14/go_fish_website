@@ -4,13 +4,15 @@
   box-sizing: border-box;
 }
 
+@media (prefers-color-scheme: dark) {
+  a {
+    color: var(--neutral-layer-app-text);
+  }
+}
 html {
   height: 100%;
   font-family: var(--font-primary);
   font-size: 16px;
-  // background: var(--color-primary-light)
-  background-image: url(/images/16f9c66924c4f94888c1dc2e9404ce11.jpeg);
-  background-position: cover;
 }
 
 body {
@@ -21,7 +23,6 @@ body {
 
 button, input, optgroup, select, textarea {
   margin: 0;
-
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -34,7 +35,6 @@ blockquote, dl, dd, h1, h2, h3, h4, h5, h6, figure, pre {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: var(--space-sm);
-
   font-weight: 10;
 }
 
@@ -78,6 +78,7 @@ small {
 
 .logo {
   height:15vh ;
+  color: white;
 }
 
 .container {
@@ -101,6 +102,6 @@ small {
 .page-content {
   min-width: 70vw;
   min-height: 70vh;
-  margin-bottom: 50px;
+  margin: 0 auto;
   padding: 0 var(--space-md);
 }

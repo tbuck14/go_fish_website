@@ -2,34 +2,34 @@
   .flex.items-center
     img.logo src="/images/noun_fishing.png" alt="The game of go fish" 
     h1
-      span.light-primary-text Go
+      span.primary Go
       span Fish
   .flex.justify-center.items-center
     .flex-col 
       h3 Tbuck14
       h5.text-center logged in   
-    img.avatar src="/images/trump.png" alt="The game of go fish"
+    img.avatar.margin-right-lg src="/images/trump.png" alt="The game of go fish"
 .card.container--xs.page-content.text-center
   h1 What player do you want to ask?
   form.center.margin-top-xl action='/what-card' method='POST'
     input.radio type="radio" name="player" id="player1" 
     label.radio__label for="player1" 
-      img.small-avatar src="/images/trooper.jpeg" alt="The game of go fish"
+      img.avatar.avatar--small src="/images/trooper.jpeg" alt="The game of go fish"
       span player1  |  Cards: 3
     br
     input.radio type="radio" name="player" id="player2"
     label.radio__label for="player2" 
-      img.small-avatar src="/images/kong.png" alt="The game of go fish"
+      img.avatar.avatar--small src="/images/kong.png" alt="The game of go fish"
       span player2  |  Cards: 5
     br
     input.radio type="radio" name="player" id="player3" 
     label.radio__label for="player3" 
-      img.small-avatar src="/images/yoda.jpeg" alt="The game of go fish"
+      img.avatar.avatar--small src="/images/yoda.jpeg" alt="The game of go fish"
       span player3  |  Cards: 7
     br
     input.radio type="radio" name="player" id="player4" 
     label.radio__label for="player4" 
-      img.small-avatar src="/images/chewy.png" alt="The game of go fish"
+      img.avatar.avatar--small src="/images/chewy.png" alt="The game of go fish"
       span player4  |  Cards: 4
     br
     button.btn.btn--primary.half-width.btn--rounded.margin-top-lg type='submit' Next

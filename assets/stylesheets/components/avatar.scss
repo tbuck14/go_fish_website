@@ -1,0 +1,9 @@
+.avatar {
+    height: calc(3 * var(--space-lg));
+    border: 2px solid var(--neutral-layer-1-border);
+    border-radius: 50%;
+}
+
+.avatar--small {
+    height: calc(2 * var(--space-lg));
+}
