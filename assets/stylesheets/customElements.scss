@@ -2,9 +2,14 @@
   color: var(--color-primary-light);
 }
 .primary{
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
-
+.notice {
+  color: var(--color-notice);
+}
+.underline {
+  text-decoration: underline;
+}
 .dark-primary-text {
   color: var(--color-primary-darker);
 }

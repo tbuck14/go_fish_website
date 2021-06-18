@@ -37,7 +37,7 @@ $color-white: #ffffff;
 $color-black: #010204;
 
 :root {
-
+  --logo-color: url(images/noun_fishing);
   --color-white: #{$color-white};
   --color-black: #{$color-black};
 
@@ -154,9 +154,10 @@ $color-black: #010204;
 
   @media (prefers-color-scheme: dark) {
     & {
+      --logo-color: url(noun_fishing_white);
+
       --color-white: #{$color-black};
       --color-black: #{$color-white};
-  
       --color-primary-lighter: #{$color-neutral-700};
       --color-primary-light: #{$color-primary-500};
       --color-primary: #{$color-primary-400};
@@ -277,3 +278,4 @@ $breakpoint-sm: 48rem; // ~768px vertical ipad
 $breakpoint-md: 64rem; // ~1024px landscape ipad
 $breakpoint-lg: 80rem; // ~1280px small laptop
 $breakpoint-xl: 90rem; // ~1440px big laptop
+
